@@ -1,3 +1,26 @@
 
 Platform Independent:
   Java is platform independent using jvm and the byte code. When the source code is compiled, javac (compiler) compiles it to produce byte code or .class file which is then used by the JVM to execute.
+This JVM is platform independent but .class produced is platform independent, hence the same byte code can be used on JVM platform.
+
+JVM :
+  This is responsible to execute the byte code to run the applications.
+  -> Class Loader: Loads compiled .class files into the JVM.
+  -> Bytecode Verifier: Checks the bytecode for validity and security constraints.
+  -> Interpreter/Just-In-Time (JIT) Compiler: Converts bytecode into native machine code that the underlying hardware can execute.
+  -> Garbage Collector: Manages memory by automatically reclaiming memory occupied by objects that are no longer in use.
+
+JRE :
+  This has the JVM to run the app and contains the required other libraries & JAVA APIs (Application Programming Interface).
+
+JDK :
+  This contains the JRE and the other development kit required to develop java app.The JDK is a complete development environment for building Java applications. It includes several tools and utilities, among which are:
+  -> Java Compiler (javac): This is the tool that compiles Java source code (.java files) into bytecode (.class files).
+  -> Java Archive Tool (jar): This tool is used for packaging compiled Java classes and associated metadata into JAR files.
+  -> Java Debugger (jdb): This tool helps in debugging Java programs.
+  -> Other Tools: The JDK also includes tools for documentation (javadoc), security (keytool), and more.
+
+
+Commands:
+javac HelloWorld.java    -> compiles and produces the byte code by JDK/compiler
+java HelloWorld          -> JVM runs the produced byte code produced 
