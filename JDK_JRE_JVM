@@ -1,0 +1,3 @@
+
+Platform Independent:
+  Java is platform independent using jvm and the byte code. When the source code is compiled, javac (compiler) compiles it to produce byte code or .class file which is then used by the JVM to execute.
